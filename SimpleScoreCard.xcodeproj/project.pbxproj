@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661E091319896C6000CC7D2C /* RoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E091219896C6000CC7D2C /* RoundsViewController.m */; };
+		661E09161989725B00CC7D2C /* ScoreCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E09151989725B00CC7D2C /* ScoreCardViewController.m */; };
+		66D2B83B198E96B200AD86B8 /* KeyPadScoreEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D2B83A198E96B200AD86B8 /* KeyPadScoreEntryViewController.m */; };
+		66F379AD1989A454001581E0 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F379AC1989A454001581E0 /* MyCollectionViewCell.m */; };
+		D83CA63019895DDC000570F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83CA62F19895DDC000570F5 /* Foundation.framework */; };
+		D83CA63219895DDC000570F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83CA63119895DDC000570F5 /* CoreGraphics.framework */; };
+		D83CA63419895DDC000570F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83CA63319895DDC000570F5 /* UIKit.framework */; };
+		D83CA63A19895DDC000570F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D83CA63819895DDC000570F5 /* InfoPlist.strings */; };
+		D83CA63C19895DDC000570F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CA63B19895DDC000570F5 /* main.m */; };
+		D83CA64019895DDC000570F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CA63F19895DDC000570F5 /* AppDelegate.m */; };
+		D83CA64319895DDC000570F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83CA64119895DDC000570F5 /* Main.storyboard */; };
+		D83CA64819895DDC000570F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83CA64719895DDC000570F5 /* Images.xcassets */; };
+		D83CA64F19895DDC000570F5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83CA64E19895DDC000570F5 /* XCTest.framework */; };
+		D83CA65019895DDC000570F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83CA62F19895DDC000570F5 /* Foundation.framework */; };
+		D83CA65119895DDC000570F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83CA63319895DDC000570F5 /* UIKit.framework */; };
+		D83CA65919895DDC000570F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D83CA65719895DDC000570F5 /* InfoPlist.strings */; };
+		D83CA65B19895DDC000570F5 /* SimpleScoreCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CA65A19895DDC000570F5 /* SimpleScoreCardTests.m */; };
+		D83D8E491989649D00F9D039 /* GolfRound.m in Sources */ = {isa = PBXBuildFile; fileRef = D83D8E481989649D00F9D039 /* GolfRound.m */; };
+		D887B358198FFA4300C16F0E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D887B357198FFA4300C16F0E /* CoreData.framework */; };
+		D887B35B198FFABF00C16F0E /* Scores.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D887B359198FFABF00C16F0E /* Scores.xcdatamodeld */; };
+		D887B35E19901C7600C16F0E /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D887B35D19901C7600C16F0E /* AddCourseViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D83CA65219895DDC000570F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D83CA62419895DDC000570F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83CA62B19895DDC000570F5;
+			remoteInfo = SimpleScoreCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		661E091119896C6000CC7D2C /* RoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundsViewController.h; path = simplescorecard/RoundsViewController.h; sourceTree = SOURCE_ROOT; };
+		661E091219896C6000CC7D2C /* RoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundsViewController.m; path = simplescorecard/RoundsViewController.m; sourceTree = SOURCE_ROOT; };
+		661E09141989725B00CC7D2C /* ScoreCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreCardViewController.h; path = simplescorecard/ScoreCardViewController.h; sourceTree = SOURCE_ROOT; };
+		661E09151989725B00CC7D2C /* ScoreCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScoreCardViewController.m; path = simplescorecard/ScoreCardViewController.m; sourceTree = SOURCE_ROOT; };
+		66D2B839198E96B200AD86B8 /* KeyPadScoreEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyPadScoreEntryViewController.h; path = simplescorecard/KeyPadScoreEntryViewController.h; sourceTree = SOURCE_ROOT; };
+		66D2B83A198E96B200AD86B8 /* KeyPadScoreEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyPadScoreEntryViewController.m; path = simplescorecard/KeyPadScoreEntryViewController.m; sourceTree = SOURCE_ROOT; };
+		66F379AB1989A454001581E0 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewCell.h; path = ../MyCollectionViewCell.h; sourceTree = "<group>"; };
+		66F379AC1989A454001581E0 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewCell.m; path = ../MyCollectionViewCell.m; sourceTree = "<group>"; };
+		D83CA62C19895DDC000570F5 /* SimpleScoreCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleScoreCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83CA62F19895DDC000570F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D83CA63119895DDC000570F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D83CA63319895DDC000570F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D83CA63719895DDC000570F5 /* SimpleScoreCard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleScoreCard-Info.plist"; sourceTree = "<group>"; };
+		D83CA63919895DDC000570F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D83CA63B19895DDC000570F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D83CA63D19895DDC000570F5 /* SimpleScoreCard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleScoreCard-Prefix.pch"; sourceTree = "<group>"; };
+		D83CA63E19895DDC000570F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D83CA63F19895DDC000570F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D83CA64219895DDC000570F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D83CA64719895DDC000570F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D83CA64D19895DDC000570F5 /* SimpleScoreCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleScoreCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83CA64E19895DDC000570F5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D83CA65619895DDC000570F5 /* SimpleScoreCardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleScoreCardTests-Info.plist"; sourceTree = "<group>"; };
+		D83CA65819895DDC000570F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D83CA65A19895DDC000570F5 /* SimpleScoreCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleScoreCardTests.m; sourceTree = "<group>"; };
+		D83D8E471989649D00F9D039 /* GolfRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GolfRound.h; sourceTree = "<group>"; };
+		D83D8E481989649D00F9D039 /* GolfRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GolfRound.m; sourceTree = "<group>"; };
+		D887B357198FFA4300C16F0E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D887B35A198FFABF00C16F0E /* Scores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Scores.xcdatamodel; sourceTree = "<group>"; };
+		D887B35C19901C7600C16F0E /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCourseViewController.h; path = simplescorecard/AddCourseViewController.h; sourceTree = SOURCE_ROOT; };
+		D887B35D19901C7600C16F0E /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCourseViewController.m; path = simplescorecard/AddCourseViewController.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D83CA62919895DDC000570F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D887B358198FFA4300C16F0E /* CoreData.framework in Frameworks */,
+				D83CA63219895DDC000570F5 /* CoreGraphics.framework in Frameworks */,
+				D83CA63419895DDC000570F5 /* UIKit.framework in Frameworks */,
+				D83CA63019895DDC000570F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CA64A19895DDC000570F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CA64F19895DDC000570F5 /* XCTest.framework in Frameworks */,
+				D83CA65119895DDC000570F5 /* UIKit.framework in Frameworks */,
+				D83CA65019895DDC000570F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D83CA62319895DDC000570F5 = {
+			isa = PBXGroup;
+			children = (
+				D83CA63519895DDC000570F5 /* SimpleScoreCard */,
+				D83CA65419895DDC000570F5 /* SimpleScoreCardTests */,
+				D83CA62E19895DDC000570F5 /* Frameworks */,
+				D83CA62D19895DDC000570F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D83CA62D19895DDC000570F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA62C19895DDC000570F5 /* SimpleScoreCard.app */,
+				D83CA64D19895DDC000570F5 /* SimpleScoreCardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D83CA62E19895DDC000570F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D887B357198FFA4300C16F0E /* CoreData.framework */,
+				D83CA62F19895DDC000570F5 /* Foundation.framework */,
+				D83CA63119895DDC000570F5 /* CoreGraphics.framework */,
+				D83CA63319895DDC000570F5 /* UIKit.framework */,
+				D83CA64E19895DDC000570F5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D83CA63519895DDC000570F5 /* SimpleScoreCard */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA63E19895DDC000570F5 /* AppDelegate.h */,
+				D83CA63F19895DDC000570F5 /* AppDelegate.m */,
+				D83CA64119895DDC000570F5 /* Main.storyboard */,
+				D887B35C19901C7600C16F0E /* AddCourseViewController.h */,
+				D887B35D19901C7600C16F0E /* AddCourseViewController.m */,
+				66D2B839198E96B200AD86B8 /* KeyPadScoreEntryViewController.h */,
+				66D2B83A198E96B200AD86B8 /* KeyPadScoreEntryViewController.m */,
+				66F379AB1989A454001581E0 /* MyCollectionViewCell.h */,
+				66F379AC1989A454001581E0 /* MyCollectionViewCell.m */,
+				661E09141989725B00CC7D2C /* ScoreCardViewController.h */,
+				661E09151989725B00CC7D2C /* ScoreCardViewController.m */,
+				661E091119896C6000CC7D2C /* RoundsViewController.h */,
+				661E091219896C6000CC7D2C /* RoundsViewController.m */,
+				D83D8E471989649D00F9D039 /* GolfRound.h */,
+				D83D8E481989649D00F9D039 /* GolfRound.m */,
+				D83CA64719895DDC000570F5 /* Images.xcassets */,
+				D887B359198FFABF00C16F0E /* Scores.xcdatamodeld */,
+				D83CA63619895DDC000570F5 /* Supporting Files */,
+			);
+			path = SimpleScoreCard;
+			sourceTree = "<group>";
+		};
+		D83CA63619895DDC000570F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA63719895DDC000570F5 /* SimpleScoreCard-Info.plist */,
+				D83CA63819895DDC000570F5 /* InfoPlist.strings */,
+				D83CA63B19895DDC000570F5 /* main.m */,
+				D83CA63D19895DDC000570F5 /* SimpleScoreCard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D83CA65419895DDC000570F5 /* SimpleScoreCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA65A19895DDC000570F5 /* SimpleScoreCardTests.m */,
+				D83CA65519895DDC000570F5 /* Supporting Files */,
+			);
+			path = SimpleScoreCardTests;
+			sourceTree = "<group>";
+		};
+		D83CA65519895DDC000570F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D83CA65619895DDC000570F5 /* SimpleScoreCardTests-Info.plist */,
+				D83CA65719895DDC000570F5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D83CA62B19895DDC000570F5 /* SimpleScoreCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83CA65E19895DDC000570F5 /* Build configuration list for PBXNativeTarget "SimpleScoreCard" */;
+			buildPhases = (
+				D83CA62819895DDC000570F5 /* Sources */,
+				D83CA62919895DDC000570F5 /* Frameworks */,
+				D83CA62A19895DDC000570F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleScoreCard;
+			productName = SimpleScoreCard;
+			productReference = D83CA62C19895DDC000570F5 /* SimpleScoreCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D83CA64C19895DDC000570F5 /* SimpleScoreCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83CA66119895DDC000570F5 /* Build configuration list for PBXNativeTarget "SimpleScoreCardTests" */;
+			buildPhases = (
+				D83CA64919895DDC000570F5 /* Sources */,
+				D83CA64A19895DDC000570F5 /* Frameworks */,
+				D83CA64B19895DDC000570F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83CA65319895DDC000570F5 /* PBXTargetDependency */,
+			);
+			name = SimpleScoreCardTests;
+			productName = SimpleScoreCardTests;
+			productReference = D83CA64D19895DDC000570F5 /* SimpleScoreCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D83CA62419895DDC000570F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					D83CA64C19895DDC000570F5 = {
+						TestTargetID = D83CA62B19895DDC000570F5;
+					};
+				};
+			};
+			buildConfigurationList = D83CA62719895DDC000570F5 /* Build configuration list for PBXProject "SimpleScoreCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D83CA62319895DDC000570F5;
+			productRefGroup = D83CA62D19895DDC000570F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D83CA62B19895DDC000570F5 /* SimpleScoreCard */,
+				D83CA64C19895DDC000570F5 /* SimpleScoreCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D83CA62A19895DDC000570F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CA64819895DDC000570F5 /* Images.xcassets in Resources */,
+				D83CA63A19895DDC000570F5 /* InfoPlist.strings in Resources */,
+				D83CA64319895DDC000570F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CA64B19895DDC000570F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CA65919895DDC000570F5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D83CA62819895DDC000570F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66D2B83B198E96B200AD86B8 /* KeyPadScoreEntryViewController.m in Sources */,
+				661E091319896C6000CC7D2C /* RoundsViewController.m in Sources */,
+				D887B35B198FFABF00C16F0E /* Scores.xcdatamodeld in Sources */,
+				D83CA64019895DDC000570F5 /* AppDelegate.m in Sources */,
+				66F379AD1989A454001581E0 /* MyCollectionViewCell.m in Sources */,
+				D83D8E491989649D00F9D039 /* GolfRound.m in Sources */,
+				D887B35E19901C7600C16F0E /* AddCourseViewController.m in Sources */,
+				661E09161989725B00CC7D2C /* ScoreCardViewController.m in Sources */,
+				D83CA63C19895DDC000570F5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CA64919895DDC000570F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CA65B19895DDC000570F5 /* SimpleScoreCardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D83CA65319895DDC000570F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83CA62B19895DDC000570F5 /* SimpleScoreCard */;
+			targetProxy = D83CA65219895DDC000570F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D83CA63819895DDC000570F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83CA63919895DDC000570F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D83CA64119895DDC000570F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83CA64219895DDC000570F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D83CA65719895DDC000570F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83CA65819895DDC000570F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D83CA65C19895DDC000570F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D83CA65D19895DDC000570F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D83CA65F19895DDC000570F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleScoreCard/SimpleScoreCard-Prefix.pch";
+				INFOPLIST_FILE = "SimpleScoreCard/SimpleScoreCard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D83CA66019895DDC000570F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleScoreCard/SimpleScoreCard-Prefix.pch";
+				INFOPLIST_FILE = "SimpleScoreCard/SimpleScoreCard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D83CA66219895DDC000570F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleScoreCard.app/SimpleScoreCard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleScoreCard/SimpleScoreCard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleScoreCardTests/SimpleScoreCardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D83CA66319895DDC000570F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleScoreCard.app/SimpleScoreCard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleScoreCard/SimpleScoreCard-Prefix.pch";
+				INFOPLIST_FILE = "SimpleScoreCardTests/SimpleScoreCardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D83CA62719895DDC000570F5 /* Build configuration list for PBXProject "SimpleScoreCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CA65C19895DDC000570F5 /* Debug */,
+				D83CA65D19895DDC000570F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83CA65E19895DDC000570F5 /* Build configuration list for PBXNativeTarget "SimpleScoreCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CA65F19895DDC000570F5 /* Debug */,
+				D83CA66019895DDC000570F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83CA66119895DDC000570F5 /* Build configuration list for PBXNativeTarget "SimpleScoreCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CA66219895DDC000570F5 /* Debug */,
+				D83CA66319895DDC000570F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D887B359198FFABF00C16F0E /* Scores.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D887B35A198FFABF00C16F0E /* Scores.xcdatamodel */,
+			);
+			currentVersion = D887B35A198FFABF00C16F0E /* Scores.xcdatamodel */;
+			name = Scores.xcdatamodeld;
+			path = ../simplescorecard/Scores.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D83CA62419895DDC000570F5 /* Project object */;
+}
