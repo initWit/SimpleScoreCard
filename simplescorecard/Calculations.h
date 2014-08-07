@@ -10,4 +10,7 @@
 
 @interface Calculations : NSObject
 
+-(int) calculateTotal:(NSArray *)array;
+-(NSString *) calculatePar:(int)par minusScore:(int)score;
+-(NSString *) scoreNameForScore:(int) score andPar:(int)par;
 @end

@@ -12,5 +12,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *myLabel;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *parSegmentedControl;
 @property (strong, nonatomic) IBOutlet UIPickerView *scorePickerView;
-
+@property (strong, nonatomic) IBOutlet UIButton *addScoreButton;
 @end

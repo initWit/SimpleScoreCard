@@ -19,7 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     RoundsViewController *controller = (RoundsViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
