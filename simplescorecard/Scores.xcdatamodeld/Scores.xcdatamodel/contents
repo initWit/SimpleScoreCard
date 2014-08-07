@@ -4,6 +4,7 @@
         <attribute name="golfCourseName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="parHole1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="parHole2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="playedPer" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GolfRound" inverseName="playedOn" inverseEntity="GolfRound" syncable="YES"/>
     </entity>
     <entity name="GolfRound" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
@@ -14,10 +15,16 @@
         <attribute name="scoreHole2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="teeBox" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="totalScore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <relationship name="theCourse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GolfCourse" syncable="YES"/>
+        <relationship name="playedBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="plays" inverseEntity="Player" syncable="YES"/>
+        <relationship name="playedOn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GolfCourse" inverseName="playedPer" inverseEntity="GolfCourse" syncable="YES"/>
+    </entity>
+    <entity name="Player" syncable="YES">
+        <attribute name="playerName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="plays" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GolfRound" inverseName="playedBy" inverseEntity="GolfRound" syncable="YES"/>
     </entity>
     <elements>
-        <element name="GolfCourse" positionX="-54" positionY="54" width="128" height="88"/>
-        <element name="GolfRound" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="GolfCourse" positionX="-144" positionY="-0" width="128" height="103"/>
+        <element name="GolfRound" positionX="-353" positionY="-7" width="128" height="193"/>
+        <element name="Player" positionX="-533" positionY="27" width="128" height="73"/>
     </elements>
 </model>
