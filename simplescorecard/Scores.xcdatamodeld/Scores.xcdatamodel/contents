@@ -1,30 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="GolfCourse" syncable="YES">
+    <entity name="Course" representedClassName="Course" syncable="YES">
         <attribute name="golfCourseName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="parHole1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="parHole2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="playedPer" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GolfRound" inverseName="playedOn" inverseEntity="GolfRound" syncable="YES"/>
+        <relationship name="holes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hole" inverseName="course" inverseEntity="Hole" syncable="YES"/>
+        <relationship name="round" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Round" inverseName="course" inverseEntity="Round" syncable="YES"/>
     </entity>
-    <entity name="GolfRound" syncable="YES">
+    <entity name="Hole" representedClassName="Hole" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="par" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="teeBox" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="yardage" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="holes" inverseEntity="Course" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES">
+        <attribute name="playerName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rounds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Round" inverseName="players" inverseEntity="Round" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Score" inverseName="player" inverseEntity="Score" syncable="YES"/>
+    </entity>
+    <entity name="Round" representedClassName="Round" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="golfCourseName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="parHole1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="parHole2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="scoreHole1" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="scoreHole2" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="teeBox" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="totalScore" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <relationship name="playedBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="plays" inverseEntity="Player" syncable="YES"/>
-        <relationship name="playedOn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GolfCourse" inverseName="playedPer" inverseEntity="GolfCourse" syncable="YES"/>
+        <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="round" inverseEntity="Course" syncable="YES"/>
+        <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="rounds" inverseEntity="Player" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Score" inverseName="round" inverseEntity="Score" syncable="YES"/>
     </entity>
-    <entity name="Player" syncable="YES">
-        <attribute name="playerName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="plays" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GolfRound" inverseName="playedBy" inverseEntity="GolfRound" syncable="YES"/>
+    <entity name="Score" representedClassName="Score" syncable="YES">
+        <attribute name="holeNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="player" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="scores" inverseEntity="Player" syncable="YES"/>
+        <relationship name="round" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Round" inverseName="scores" inverseEntity="Round" syncable="YES"/>
     </entity>
     <elements>
-        <element name="GolfCourse" positionX="-144" positionY="-0" width="128" height="103"/>
-        <element name="GolfRound" positionX="-353" positionY="-7" width="128" height="193"/>
-        <element name="Player" positionX="-533" positionY="27" width="128" height="73"/>
+        <element name="Course" positionX="-83" positionY="-241" width="128" height="88"/>
+        <element name="Round" positionX="-396" positionY="-166" width="128" height="133"/>
+        <element name="Player" positionX="-117" positionY="-118" width="128" height="88"/>
+        <element name="Score" positionX="-117" positionY="-25" width="128" height="103"/>
+        <element name="Hole" positionX="97" positionY="-235" width="128" height="118"/>
     </elements>
 </model>

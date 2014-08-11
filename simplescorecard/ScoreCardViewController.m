@@ -10,6 +10,11 @@
 #import "MyCollectionViewCell.h"
 #import "GolfRound.h"
 #import "Calculations.h"
+#import "Player.h"
+#import "Round.h"
+#import "Score.h"
+#import "Course.h"
+#import "Hole.h"
 
 @interface ScoreCardViewController () <UICollectionViewDataSource, UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
@@ -34,6 +39,8 @@
     self.currentGolfRound = [[GolfRound alloc] init];
     self.currentGolfRound.holePars = [[NSMutableArray alloc] initWithCapacity:GOLF_ROUND_NUM_OF_HOLES];
     self.currentGolfRound.holeScores = [[NSMutableArray alloc] initWithCapacity:GOLF_ROUND_NUM_OF_HOLES];
+
+    NSLog(@"self.currentRound is %@",self.currentRound);
 
     for (int i=0; i<GOLF_ROUND_NUM_OF_HOLES; i++) {
         [self.currentGolfRound.holePars addObject:[NSNumber numberWithInt:0]];
@@ -139,6 +146,9 @@
 
     // save the selected score in the array
     [self.currentGolfRound.holeScores replaceObjectAtIndex:currentHoleIndexPath.row withObject:selectedHoleScoreNumber];
+
+    // save the selected score into core data model
+
 
     // reload cell data
     [self.currentHoleCollectionView reloadData];

@@ -7,8 +7,10 @@
 //
 
 #import "RoundsViewController.h"
-#import "GolfRound.h"
 #import "AddCourseViewController.h"
+#import "ScoreCardViewController.h"
+#import "Round.h"
+#import "Course.h"
 
 @interface RoundsViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *roundsTableView;
@@ -27,8 +29,8 @@
 
 - (void) loadData
 {
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"GolfRound"];
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"golfCourseName" ascending:YES];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Round"];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
     request.sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
     self.roundsArray = (NSMutableArray *)[self.managedObjectContext executeFetchRequest:request error:nil];
     [self.roundsTableView reloadData];
@@ -48,7 +50,8 @@
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"roundsCell"];
 
     NSManagedObject *currentRound = [self.roundsArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = [currentRound valueForKey:@"golfCourseName"];
+    NSManagedObject *golfCourse = [currentRound valueForKey:@"course"];
+    cell.textLabel.text = [golfCourse valueForKey:@"golfCourseName"];
 
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"ccc, MMMM d, YYYY @ h:mma"];
@@ -72,15 +75,31 @@
 {
     AddCourseViewController *sourceVC = segue.sourceViewController;
 
-    NSManagedObject *newGolfRound = [NSEntityDescription insertNewObjectForEntityForName:@"GolfRound" inManagedObjectContext:self.managedObjectContext];
+    NSManagedObject *newGolfCourse = [NSEntityDescription insertNewObjectForEntityForName:@"Course" inManagedObjectContext:self.managedObjectContext];
 
-    
+    [newGolfCourse setValue:sourceVC.addedGolfCourseName forKey:@"golfCourseName"];
 
-    [newGolfRound setValue:sourceVC.addedGolfCourseName forKey:@"golfCourseName"];
-    [newGolfRound setValue:[NSDate date] forKey:@"date"];
+    NSManagedObject *newRound = [NSEntityDescription insertNewObjectForEntityForName:@"Round" inManagedObjectContext:self.managedObjectContext];
+
+    [newRound setValue:[NSDate date] forKey:@"date"];
+    [newRound setValue:newGolfCourse forKey:@"course"];
+
     [self.managedObjectContext save:nil];
     [self loadData];
+}
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"StartScoreCardSegue"])
+    {
+        ScoreCardViewController *destinationVC = segue.destinationViewController;
+        destinationVC.managedObjectContext = self.managedObjectContext;
+
+        int selectedRow = [self.roundsTableView indexPathForCell:sender].row;
+        Round *selectedRound = [self.roundsArray objectAtIndex:selectedRow];
+        destinationVC.currentRound = selectedRound;
+    }
 }
 
 

@@ -45,7 +45,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="1Oa-tf-fUq" kind="push" id="rY7-sP-Jav"/>
+                                            <segue destination="1Oa-tf-fUq" kind="push" identifier="StartScoreCardSegue" id="rY7-sP-Jav"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

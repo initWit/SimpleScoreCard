@@ -10,6 +10,11 @@
 		661DE0FD199160F00002CF98 /* Calculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 661DE0FC199160F00002CF98 /* Calculations.m */; };
 		661E091319896C6000CC7D2C /* RoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E091219896C6000CC7D2C /* RoundsViewController.m */; };
 		661E09161989725B00CC7D2C /* ScoreCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661E09151989725B00CC7D2C /* ScoreCardViewController.m */; };
+		6635AA7D199879E200C1D293 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 6635AA7C199879E200C1D293 /* Score.m */; };
+		6635AA80199879E200C1D293 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 6635AA7F199879E200C1D293 /* Course.m */; };
+		6635AA83199879E200C1D293 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 6635AA82199879E200C1D293 /* Player.m */; };
+		6635AA86199879E200C1D293 /* Hole.m in Sources */ = {isa = PBXBuildFile; fileRef = 6635AA85199879E200C1D293 /* Hole.m */; };
+		6635AA89199879E300C1D293 /* Round.m in Sources */ = {isa = PBXBuildFile; fileRef = 6635AA88199879E300C1D293 /* Round.m */; };
 		66F379AD1989A454001581E0 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F379AC1989A454001581E0 /* MyCollectionViewCell.m */; };
 		D83CA63019895DDC000570F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83CA62F19895DDC000570F5 /* Foundation.framework */; };
 		D83CA63219895DDC000570F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D83CA63119895DDC000570F5 /* CoreGraphics.framework */; };
@@ -47,6 +52,16 @@
 		661E091219896C6000CC7D2C /* RoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundsViewController.m; path = simplescorecard/RoundsViewController.m; sourceTree = SOURCE_ROOT; };
 		661E09141989725B00CC7D2C /* ScoreCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreCardViewController.h; path = simplescorecard/ScoreCardViewController.h; sourceTree = SOURCE_ROOT; };
 		661E09151989725B00CC7D2C /* ScoreCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScoreCardViewController.m; path = simplescorecard/ScoreCardViewController.m; sourceTree = SOURCE_ROOT; };
+		6635AA7B199879E200C1D293 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Score.h; path = simplescorecard/Score.h; sourceTree = SOURCE_ROOT; };
+		6635AA7C199879E200C1D293 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Score.m; path = simplescorecard/Score.m; sourceTree = SOURCE_ROOT; };
+		6635AA7E199879E200C1D293 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Course.h; path = simplescorecard/Course.h; sourceTree = SOURCE_ROOT; };
+		6635AA7F199879E200C1D293 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Course.m; path = simplescorecard/Course.m; sourceTree = SOURCE_ROOT; };
+		6635AA81199879E200C1D293 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = simplescorecard/Player.h; sourceTree = SOURCE_ROOT; };
+		6635AA82199879E200C1D293 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = simplescorecard/Player.m; sourceTree = SOURCE_ROOT; };
+		6635AA84199879E200C1D293 /* Hole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hole.h; path = simplescorecard/Hole.h; sourceTree = SOURCE_ROOT; };
+		6635AA85199879E200C1D293 /* Hole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hole.m; path = simplescorecard/Hole.m; sourceTree = SOURCE_ROOT; };
+		6635AA87199879E300C1D293 /* Round.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Round.h; path = simplescorecard/Round.h; sourceTree = SOURCE_ROOT; };
+		6635AA88199879E300C1D293 /* Round.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Round.m; path = simplescorecard/Round.m; sourceTree = SOURCE_ROOT; };
 		66F379AB1989A454001581E0 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewCell.h; path = ../MyCollectionViewCell.h; sourceTree = "<group>"; };
 		66F379AC1989A454001581E0 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewCell.m; path = ../MyCollectionViewCell.m; sourceTree = "<group>"; };
 		D83CA62C19895DDC000570F5 /* SimpleScoreCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleScoreCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +165,16 @@
 				D83D8E481989649D00F9D039 /* GolfRound.m */,
 				D83CA64719895DDC000570F5 /* Images.xcassets */,
 				D887B359198FFABF00C16F0E /* Scores.xcdatamodeld */,
+				6635AA87199879E300C1D293 /* Round.h */,
+				6635AA88199879E300C1D293 /* Round.m */,
+				6635AA84199879E200C1D293 /* Hole.h */,
+				6635AA85199879E200C1D293 /* Hole.m */,
+				6635AA81199879E200C1D293 /* Player.h */,
+				6635AA82199879E200C1D293 /* Player.m */,
+				6635AA7E199879E200C1D293 /* Course.h */,
+				6635AA7F199879E200C1D293 /* Course.m */,
+				6635AA7B199879E200C1D293 /* Score.h */,
+				6635AA7C199879E200C1D293 /* Score.m */,
 				D83CA63619895DDC000570F5 /* Supporting Files */,
 			);
 			path = SimpleScoreCard;
@@ -280,15 +305,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6635AA80199879E200C1D293 /* Course.m in Sources */,
 				661E091319896C6000CC7D2C /* RoundsViewController.m in Sources */,
 				D887B35B198FFABF00C16F0E /* Scores.xcdatamodeld in Sources */,
 				661DE0FD199160F00002CF98 /* Calculations.m in Sources */,
+				6635AA7D199879E200C1D293 /* Score.m in Sources */,
 				D83CA64019895DDC000570F5 /* AppDelegate.m in Sources */,
 				66F379AD1989A454001581E0 /* MyCollectionViewCell.m in Sources */,
 				D83D8E491989649D00F9D039 /* GolfRound.m in Sources */,
 				D887B35E19901C7600C16F0E /* AddCourseViewController.m in Sources */,
 				661E09161989725B00CC7D2C /* ScoreCardViewController.m in Sources */,
 				D83CA63C19895DDC000570F5 /* main.m in Sources */,
+				6635AA83199879E200C1D293 /* Player.m in Sources */,
+				6635AA89199879E300C1D293 /* Round.m in Sources */,
+				6635AA86199879E200C1D293 /* Hole.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
